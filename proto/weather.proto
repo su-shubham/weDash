@@ -1,0 +1,40 @@
+  syntax = "proto3";
+
+  package weather;
+
+  option go_package = "proto";
+
+  // Message to represent the current weather data.
+  message WeatherData {
+      string city = 1;                // Name of the city
+      float temperature = 2;          // Current temperature in Celsius
+      float feels_like = 3;           // Perceived temperature in Celsius
+      string condition = 4;           // Main weather condition (e.g., Clear, Rain)
+      float wind_speed = 5;           // Wind speed in km/h
+      int32 humidity = 6;             // Humidity percentage
+      int64 timestamp = 7;            // Unix timestamp of the data
+  }
+
+  // Message to represent forecast data for the next days.
+  message ForecastData {
+      string city = 1;                // Name of the city
+      repeated DailyForecast daily_forecasts = 2; // List of daily forecasts
+  }
+
+  // Message to represent the forecast for a single day.
+  message DailyForecast {
+      int64 date = 1;                 // Unix timestamp for the forecast date
+      float temperature = 2;          // Temperature in Celsius
+      float humidity = 3;             // Humidity percentage
+      string condition = 4;           // Main weather condition
+      float wind_speed = 5;           // Wind speed in km/h
+  }
+
+  // Message to summarize the daily forecast.
+  message DailySummary {
+      string city = 1;                // Name of the city
+      float avg_temp = 2;             // Average temperature for the day in Celsius
+      float max_temp = 3;             // Maximum temperature for the day in Celsius
+      float min_temp = 4;             // Minimum temperature for the day in Celsius
+      string dominant_condition = 5;   // Dominant weather condition
+  }

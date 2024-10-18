@@ -1,0 +1,11 @@
+poll_interval: 1   # in minutes
+db_path: "./weather.db"
+alert_temp_threshold: 35.0   # Celsius
+alert_consecutive_updates: 2
+cities:
+  - "Delhi"
+  - "Mumbai"
+  - "Chennai"
+  - "Bangalore"
+  - "Kolkata"
+  - "Hyderabad"

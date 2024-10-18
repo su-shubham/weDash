@@ -1,0 +1,25 @@
+# Node.js dependencies
+/frontend/node_modules
+# Ignore the local environment variables for frontend and backend
+/.env
+/frontend/.env.local
+
+# Go binaries
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go workspace files
+*.test
+*.out
+
+# Build directories
+/build/
+dist/
+target/
+
+# Dependency directories
+/vendor/
