@@ -24,7 +24,7 @@ Follow these steps to set up the project:
 
 2. **Set up environment variables:**
     ```bash
-    cp backend/.env.example backend/.env
+    cp backend/.env.example .env
     cp frontend/.env.local.example frontend/.env.local
     ```
 
@@ -50,14 +50,12 @@ Follow these steps to set up the project:
 
 7. **For specific backend or frontend logs, run:**
     ```bash
-    make backend-logs  # For backend logs
     make frontend-logs  # For frontend logs
     ```
+### Screenshots:
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-This version provides a clearer overview of what the application does while maintaining a clean format. Let me know if you need any further changes!
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f2230cb8-f78c-454e-927d-f3ae3699fdf6" width="400" /></td>
+  </tr>
+</table>
